@@ -1,0 +1,31 @@
+{
+    "name": "earlhickey/pg-console",
+    "description": "ZF2 console module",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zf2",
+        "console",
+        "pg13"
+    ],
+    "homepage": "https://github.com/earlhickey/PgConsole",
+    "authors": [
+        {
+            "name": "Patrick Groot",
+            "email": "pgroot@gmail.com",
+            "homepage": "http://pg13.nl/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.3.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "PgConsole": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
