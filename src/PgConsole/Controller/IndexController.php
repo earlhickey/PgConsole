@@ -24,17 +24,18 @@ class IndexController extends AbstractActionController
         // Check mode
         $filename = $request->getParam('test', 'all'); // defaults to 'all'
 
-        $result = array();
+        $result = array(1,2,3,4,5,6);
         switch ($filename) {
             case 'meh':
-                $result = array(1,2,3);
+                $output = array_rand($result)."\n";
                 break;
             case 'all':
             default:
-                $result = array(4,5,6);
+                $output = implode(',', $result)."\n";
                 break;
         }
 
-        print_r($result); // show it in the console
+        // show it in the console
+        return $output;
     }
 }
